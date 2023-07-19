@@ -1,16 +1,82 @@
-*{
+* {
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
     font-family: 'Work Sans', sans-serif;
 }
-ol, ul{
+
+ol,
+ul {
     list-style: none
 }
-a{
+
+a {
     text-decoration: none
+}
+.btn-primary{
+    margin-bottom: 50px;
+    padding: 20px 25px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#fff;
+    background: #FF900E;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: none
+    
 }
 
 /* ==============google fonts============= */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+/* ====================Header style start=============== */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav li a{
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.nav_title{
+color: #131313;
+font-size: 2.8rem;
+font-weight: 700;
+}
+/* banner styles */
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+    margin-top: 100px;
+}
+.banner-description{
+    font-weight: 400;
+    color: #727272;
+    margin: 20px 0 50px;
+}
+
+/* ====================Header style End=============== */
