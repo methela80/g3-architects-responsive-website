@@ -14,12 +14,13 @@ ul {
 a {
     text-decoration: none
 }
-.btn-primary{
+
+.btn-primary {
     margin-bottom: 50px;
     padding: 20px 25px;
     font-size: 1.5rem;
     font-weight: 600;
-    color:#fff;
+    color: #fff;
     background: #FF900E;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -27,7 +28,16 @@ a {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     border: none
-    
+}
+
+.section_title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.text-light-grey {
+    color: #727272;
 }
 
 /* ==============google fonts============= */
@@ -50,33 +60,265 @@ nav>ul {
     align-items: center;
 }
 
-nav li a{
+nav li a {
     color: #424242;
     font-size: 18px;
     font-weight: 500;
-    
+
 }
-.nav_title{
-color: #131313;
-font-size: 2.8rem;
-font-weight: 700;
-}
+
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
     margin-top: 100px;
 }
-.banner-description{
+
+.banner-description {
     font-weight: 400;
-    color: #727272;
     margin: 20px 0 50px;
 }
 
+.banner img {
+    width: 100%;
+}
+
 /* ====================Header style End=============== */
+/* =====================main styles=================== */
+main {
+    max-width: 1140px;
+    margin: 70px auto;
+}
+
+/* teams style */
+.teams-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-text-container {
+    padding: 0 50px;
+}
+
+.teams-title {
+    font-size: 2.8rem;
+}
+
+.teams-title .quick-list {
+    font-weight: 500;
+}
+
+.teams-title .of-our {
+    font-weight: 700;
+    color: #131313;
+}
+
+.teams-title .feature {
+    font-weight: 700;
+    color: #FF900E;
+}
+
+.teams-description {
+    font-weight: 400;
+    margin: 24px 0;
+}
+
+/* teams style end */
+
+/* feature part style start */
+.features-container {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+
+.features-container .card {
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+}
+
+.feature-content .feature_descrip {
+    margin: 25px 0 30px;
+}
+
+.features-container .section_title {
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+
+.feature-img img {
+    height: 90%;
+    margin-left: 20px;
+
+}
+
+.feature-img .ten_year_badge {
+    padding: 40px;
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 140px;
+    left: -50px;
+}
+
+.ten_year_badge h2 {
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.ten_year_badge p {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* feature part style end*/
+
+/* some facts style */
+.facts-container {
+    margin: 130px 0;
+}
+
+.facts-description {
+    font-weight: 400;
+    margin: 24px 0 100px;
+
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .cards {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 30px;
+    text-align: center;
+}
+
+.facts-card-container .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #727272;
+    margin-top: 5px;
+}
+
+.facts-card-container .card-stats {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #424242;
+    margin: 10px 0;
+}
+
+/* some facts style end*/
+
+/* sponsors style */
+.sponsors {
+    margin-bottom: 130px;
+    text-align: center;
+
+}
+.sponsor-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 40px;
+    align-items: center;
+}
+.sponsor-img-container img{
+    width: 165px;
+}
+
+/* footer style start */
+.footer {
+    padding: 40px 410px;
+    border-radius: 8px;
+    background: #FFF4E7;
+
+}
+.footer_title{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #424242;
+    text-align: center;
+}
+
+
+/* =====================main styles=================== */
+/* ============== Responsive Media Queries style================== */
+/* For mobile devices */
+@media screen and (max-width:576px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav,
+    .teams-container,
+    .facts-card-container,
+    .sponsor-img-container,
+    .features-container {
+        flex-direction: column;
+    }
+
+    nav>ul {
+        gap: 10px;
+    }
+
+    .banner-title {
+        margin-top: 50px;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-container,
+    .banner-content,
+    .facts-card-container {
+        padding: 0 20px;
+    }
+
+    .facts-card-container {
+        gap: 20px;
+    }
+
+    .feature-img img {
+        width: 90%;
+
+    }
+
+    .ten_year_badge {
+        position: static;
+        width: 300px;
+        height: 100px;
+
+    }
+    .footer{
+        padding: 20px 0;
+    }
+    .footer_title{
+        font-size: 1.1rem;
+    }
+}
